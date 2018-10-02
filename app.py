@@ -28,6 +28,7 @@ def add_numbers_post():
 	  elif request.method == 'POST':
   	      print(request.form['text'].split())
   	      total = 1
+	      terms = []
   	      try:
 		terms = request.form['text'].split()
 		p = int(terms[0])
